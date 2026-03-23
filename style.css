@@ -41,7 +41,7 @@ div.title {
   font-weight: 500;
 }
 div.subtitle {
-  font-style: italic;
+  margin-bottom: 6px;
 }
 .allegroupper {
   margin-top: 2%;
@@ -109,6 +109,48 @@ h3 {
   height: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   border: 1px solid hsl(0, 0%, 85%);
+}
+.authors {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.authors details summary {
+  cursor: pointer;
+  list-style: none;
+}
+.authors details summary::-webkit-details-marker {
+  display: none;
+}
+.authors details summary::before {
+  content: "▸ ";
+  font-size: 11px;
+  color: #999;
+}
+.authors details summary::after {
+  content: " [show all]";
+  font-size: 12px;
+  color: #999;
+}
+.authors details[open] summary {
+  display: none;
+}
+.authors details[open] > span::before {
+  content: "▾ ";
+  font-size: 11px;
+  color: #999;
+}
+.paper-link {
+  margin-top: 2px;
+  font-size: 14px;
+}
+.paper-link a {
+  margin-right: 6px;
+  color: #555;
+}
+.self-author {
+  color: #222;
 }
 @media (max-width: 600px) {
   .photos-grid {
