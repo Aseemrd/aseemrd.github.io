@@ -98,6 +98,20 @@ h3 {
   margin-bottom: 20px;
   display: inline-block;
 }
+.essay-date {
+  font-size: 14px;
+  color: #555;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+ul li .essay-date {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.35em;
+}
+ul li .essay-date::before {
+  content: "· ";
+}
 .photos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
